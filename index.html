@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Curso em Vídeo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="shortcut icon" href="imagens/favid.png" type="image/x-icon">
 </head>
 <body>
     <main>
@@ -16,8 +18,20 @@
                 <h1>Login Xtranho</h1>
                 <p>Seja bem-vindo! Faça login para acessar a sua conta.</p>
                 
-                <form method="post">
-                    
+                <form method="post" autocomplete="on"">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">account_circle</span>
+                        <input type="email" name="login" id="ilogin" placeholder="seu e-mail" autocomplete="email" required maxlength="30">
+                        <label for="ilogin"></label>
+                    </div>
+
+                    <div class="campo">
+                        <span class="material-symbols-outlined">Vpn_key</span>
+                        <input type="password" name="senha" id="isenha" placeholder="sua senha" autocomplete="current-password" required minlength="8" maxlength="15">
+                        <label for="isenha"></label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="#"  class="botao">Esqueci a senha <span class="material-symbols-outlined">mail</span>  </a>
                 </form>
             </div>
         </section>
